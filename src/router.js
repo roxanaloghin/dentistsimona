@@ -21,7 +21,7 @@ export default new Router({
   linkExactActiveClass: 'active',
   routes: [
     {
-      path: '/',
+      path: '/index',
       name: 'index',
       components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
@@ -120,6 +120,15 @@ export default new Router({
     },
     {
       path: '/mainPage',
+      name: 'mainPage',
+      components: { default: MainPage, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: 'black' }
+      }
+    },
+    {
+      path: '/',
       name: 'mainPage',
       components: { default: MainPage, footer: MainFooter },
       props: {
