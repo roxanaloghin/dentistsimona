@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/dentistSimona/'
+  publicPath: '/dentistSimona/',
 
   css: {
     // Enable CSS source maps.
