@@ -6,12 +6,13 @@ module.exports = {
     "extends": "eslint:recommended",
     "overrides": [
     ],
+    "parser": "@babel/eslint-parser",
     "parserOptions": {
-        "ecmaVersion": 2020,
-        "sourceType": "module",
-        "ecmaFeatures": {
-          "jsx": true
-        }
+      "ecmaVersion": 6,
+  "ecmaFeatures": {
+    "experimentalObjectRestSpread": true
+  }
+        
       },
 
     "rules": {
